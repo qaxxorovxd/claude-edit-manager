@@ -1,0 +1,66 @@
+# ============================================================
+#  Public repo: faqat studiya tizimi (tools, skills, styles, CLAUDE.md).
+#  Mijoz ma'lumotlari, footage va natijalar HECH QACHON commit qilinmaydi.
+# ============================================================
+
+# --- Mijozlar va ish jarayoni (maxfiy) ---
+clients/*
+!clients/.keep
+projects/*
+!projects/.keep
+references/*
+!references/.keep
+inbox/*
+!inbox/.keep
+WORKBOARD.md
+*.local.md
+
+# --- Assetlar: papka tuzilmasi qoladi, ichidagi fayllar emas ---
+assets/**/*
+!assets/**/
+!assets/**/.keep
+# Google shriftlari README dagi buyruq bilan yuklab olinadi
+
+# --- Media (har qanday joyda) ---
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.m4v
+*.mp3
+*.wav
+*.ogg
+*.opus
+*.m4a
+*.aac
+*.flac
+*.srt
+*.ass
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- Maxfiy kalitlar ---
+.env
+.env.*
+*.token
+*.key
+*.pem
+secrets*
+credentials*
+
+# --- Claude Code shaxsiy sozlamalari ---
+.claude/settings.local.json
+.claude/projects/
+
+# --- OS / muharrir ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
