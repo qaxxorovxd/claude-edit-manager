@@ -18,11 +18,8 @@ for mod, hint in (("yt_dlp", "pip install -U yt-dlp"), ("faster_whisper", "pip i
     else:
         ok = False
         print(f"[--] {mod} yo'q -> {hint}")
-node = shutil.which("node") or (r"C:\Program Files
-odejs
-ode.exe" if os.path.exists(r"C:\Program Files
-odejs
-ode.exe") else None)
+_NODE_WIN = "C:/Program Files/nodejs/node.exe"  # winget o'rnatgan, lekin PATH hali yangilanmagan holat
+node = shutil.which("node") or (_NODE_WIN if os.path.exists(_NODE_WIN) else None)
 if node:
     print("[ok] node:", subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip(), "(Remotion uchun)")
 else:
