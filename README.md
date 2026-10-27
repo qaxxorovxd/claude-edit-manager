@@ -30,6 +30,19 @@ curl -L -o SpaceGrotesk-VF.ttf "https://github.com/google/fonts/raw/main/ofl/spa
 ```
 Tekshirish: `python tools/check_env.py`
 
+Remotion (React asosidagi video) uchun Node.js kerak:
+```bash
+winget install OpenJS.NodeJS.LTS
+```
+
+### Tavsiya etiladigan Claude plugin'lari (Anthropic Directory)
+Ular Claude akkauntiga o'rnatiladi (repoda fayl sifatida turmaydi):
+- **Remotion** — remotion-best-practices, remotion-markup, remotion-render, captions, multimedia va boshqalar
+- **ffmpeg-llm** — ffmpeg buyruqlarini tuzish
+- **Local Whisper** — Whisper bilan lokal transkripsiya
+- **Motion Reel** — koddan motion video, sintez musiqa va SFX
+- **earshot** — Claude Code hodisalari uchun ovozli signallar
+
 ## Ishlatish
 Papkada Claude Code'ni oching va "ishni boshlaymiz" deng. `studio-start` skill'i yangi yoki eski mijozni so'raydi,
 loyiha ochadi yoki davom ettiradi. Video yoki audio yuborib "reels yasa" deyish ham kifoya.

@@ -1,5 +1,7 @@
 """Muhitni tekshirish: python tools/check_env.py"""
 import importlib.util
+import os
+import shutil
 import subprocess
 import sys
 
@@ -16,5 +18,14 @@ for mod, hint in (("yt_dlp", "pip install -U yt-dlp"), ("faster_whisper", "pip i
     else:
         ok = False
         print(f"[--] {mod} yo'q -> {hint}")
+node = shutil.which("node") or (r"C:\Program Files
+odejs
+ode.exe" if os.path.exists(r"C:\Program Files
+odejs
+ode.exe") else None)
+if node:
+    print("[ok] node:", subprocess.run([node, "--version"], capture_output=True, text=True).stdout.strip(), "(Remotion uchun)")
+else:
+    print("[--] node yo'q -> winget install OpenJS.NodeJS.LTS (faqat Remotion uchun kerak)")
 print("Python:", sys.version.split()[0])
 sys.exit(0 if ok else 1)
